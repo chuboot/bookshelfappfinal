@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BookShelf Apps</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <h1>
+            Hi, <br />
+            Welcome to <br />
+            BookShelft Apps
+          </h1>
+          <div class="searchSection">
+            <form id="searchBook">
+              <div class="input">
+                <h2>
+                  <i class="fa-solid fa-magnifying-glass"></i> Search Book
+                </h2>
+                <input
+                  id="searchBookTitle"
+                  type="text"
+                  placeholder="Search Judul Buku..."
+                  required
+                />
+                <button id="searchSubmit" type="submit">Cari</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col2">
+          <h2><i class="fa-solid fa-circle-plus"></i> Input Book</h2>
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputBookTitle">Judul</label>
+              <input id="inputBookTitle" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Penulis</label>
+              <input id="inputBookAuthor" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Tahun</label>
+              <input id="inputBookYear" type="number" required />
+            </div>
+            <div class="input_inline">
+              <label for="inputBookIsComplete">Selesai dibaca</label>
+              <input id="inputBookIsComplete" type="checkbox" />
+            </div>
+            <div>
+              <button id="bookSubmit" type="submit">
+                Masukkan Buku ke rak
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+         
+          <div id="incompleteBookshelfList" class="item">
+          
+          </div>
+        
+        
+          <div id="completeBookshelfList" class="item">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="close" class="close">&times;</span>
+        <p>Apakah Anda yakin untuk menghapus?</p>
+        <div class="btn-container">
+
+          <button id="yesButton">Yes</button>
+          <button id="noButton">No</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="myAlert" class="alert success">
+      <span class="closebtn">&times;</span>  
+      <strong>Success!</strong> Data Berhasil disimpan.
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+
+
